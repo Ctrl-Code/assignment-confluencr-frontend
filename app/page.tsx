@@ -1,6 +1,9 @@
 import Image from "next/image";
+import TwoLevelPieChart from "./pie-charts";
+import SimpleAreaChart from "./area-chart";
+import AreaChartPopup from "./area-chart-popup";
 
-export default function Home() {
+function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
@@ -62,4 +65,17 @@ export default function Home() {
       </main>
     </div>
   );
+}
+
+export default function Page() {
+  return <div className="flex min-h-screen items-center justify-center">
+    <div className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+      <div className="w-full flex-col items-center">
+        <SimpleAreaChart/>
+        <div className="flex justify-center">
+          <TwoLevelPieChart/>
+        </div>
+      </div>
+    </div>
+  </div>
 }
