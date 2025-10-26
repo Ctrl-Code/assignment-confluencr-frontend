@@ -72,9 +72,9 @@ export default function Page() {
     <div className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
       <div className="w-full flex-col items-center">
         <SimpleAreaChart/>
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <TwoLevelPieChart/>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>
